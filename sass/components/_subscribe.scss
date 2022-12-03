@@ -4,6 +4,7 @@
     justify-content: end;
     gap: 12px;
   }
+
   // display: block;
   // width: 450px;
   // height: 86px;
@@ -15,7 +16,6 @@
 }
 
 .subscribe__block {
-  // margin-left: 0 auto;
   display: block;
   flex-direction: column;
   justify-content: center;
@@ -23,9 +23,9 @@
 
   @media screen and(min-width:$desktop) {
     margin-left: 93px;
-    display: flexbox;
-    flex-direction: row;
+    display: inline-block;
   }
+
   // width: 450px;
   // display: block;
   // align-items: center;
@@ -84,6 +84,7 @@
   margin-bottom: 20px;
 
   @media screen and(min-width:$desktop) {
+    text-align: start;
   }
 }
 

@@ -225,7 +225,6 @@ img {
 @media screen and (min-width: 768px) {
   .contacts {
     display: block;
-    gap: 40px;
     margin-left: auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -248,6 +247,7 @@ img {
     color: var(--color-text);
     text-decoration: none;
     list-style: none;
+    gap: 30px;
   }
 }
 
@@ -278,6 +278,11 @@ img {
     font-size: 12px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
+  }
+}
 .contacts__link:hover .contacts__icon, .contacts__link:focus .contacts__icon {
   fill: var(--cursor);
   -webkit-transition: color var(--animation);
@@ -294,6 +299,17 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts li:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .section--decoration {
@@ -646,7 +662,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .socials__footer {
-    margin-left: 70px;
+    margin-left: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -906,7 +922,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .socials__footer {
-    margin-left: 70px;
+    margin-left: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -958,11 +974,7 @@ img {
 @media screen and (min-width: 1200px) {
   .subscribe__block {
     margin-left: 93px;
-    display: flexbox;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    display: inline-block;
   }
 }
 
@@ -1001,14 +1013,20 @@ img {
   color: var(--main-background-color);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .subscribe__text {
+    text-align: start;
+  }
+}
+
 .form__btn {
   position: relative;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 200px;
   height: 50px;
-  margin-left: 0 auto;
   gap: 10px;
   padding-left: 29px;
   -webkit-box-align: center;
@@ -1032,7 +1050,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .form__btn {
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
@@ -1048,7 +1066,7 @@ img {
 .form__img {
   position: absolute;
   top: 13px;
-  right: 31px;
+  right: 28px;
   fill: var(--main-background-color);
 }
 
@@ -1588,6 +1606,9 @@ img {
   padding: 0;
   margin-bottom: auto;
   list-style: none;
+}
+.mobile-menu--curent-menu {
+  color: var(--cursor);
 }
 
 .mobile-menu .link {
