@@ -1,7 +1,7 @@
 .foot {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
+
   padding-right: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -27,7 +27,6 @@
   }
   @media screen and(min-width:$desktop) {
     align-items: baseline;
-    justify-content: flex-start;
   }
 }
 
