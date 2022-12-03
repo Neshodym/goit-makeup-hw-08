@@ -774,12 +774,18 @@ img {
 .foot {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-hero-footer);
 }
 
 .container--level {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -959,7 +965,7 @@ img {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    padding-left: 90px;
+    padding-left: 93px;
   }
 }
 
