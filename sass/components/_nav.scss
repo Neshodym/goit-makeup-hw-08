@@ -14,40 +14,38 @@
   letter-spacing: 0.03em;
   color: var(--logo-part-color);
   text-decoration: none;
- @media screen and(min-width: $desktop) {
-  font-size: 26px;
-  
- }
+  @media screen and(min-width: $desktop) {
+    font-size: 26px;
+  }
 }
 .nav__logo--part {
   color: var(--cursor);
 }
-.nav__list { 
+.nav__list {
   display: none;
-  
- @media screen and(min-width:$tablet)  {
-   margin-left: 88px;
 
-  @media screen and(min-width:$desktop) {
+  @media screen and(min-width:$tablet) {
+    margin-left: 88px;
+
+    @media screen and(min-width:$desktop) {
       margin-left: 93px;
-     }
-  display: flex;
-  color: var(--main-color-text);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  list-style: none;
-  flex-wrap: wrap;
-  gap: 50px;}
-      
- 
+    }
+    display: flex;
+    color: var(--main-color-text);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
 }
 .nav__link {
   position: relative;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 33px;
   color: var(--main-color-text);
   font-weight: 500;
   font-size: 14px;
@@ -58,30 +56,25 @@
   transition: color var(--animation);
 
   &:focus-within {
-  color: var(--cursor);
+    color: var(--cursor);
+  }
+  &:hover {
+    color: var(--cursor);
+  }
+
+  &--curent {
+    color: var(--cursor);
+  }
+  &--curent::after {
+    color: var(--cursor);
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--cursor);
+  }
 }
-&:hover {
-  color: var(--cursor);
-}
-
-&--curent {
-  color: var(--cursor);
-}
-&--curent::after {
-  color: var(--cursor);
-  content: "";
-  position: absolute;
-  display: block;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--cursor);
-}
-
-}
-
-
-
-
