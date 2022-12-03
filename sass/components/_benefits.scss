@@ -1,0 +1,73 @@
+.section--margin {
+  @media screen and(min-width:$desktop) {
+    padding-bottom: 0;
+  }
+}
+
+.benefits {
+  display: block;
+  font-family: "Roboto";
+
+  @media screen and(min-width:$tablet) {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and(min-width:$desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.benefits__item {
+  width: 450px;
+  @media screen and(min-width:$tablet) {
+    width: 354px;
+    // flex-wrap: wrap;
+  }
+  @media screen and(min-width:$desktop) {
+    width: 270px;
+  }
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.benefits__icons {
+  display: flex;
+  margin-bottom: 30px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.benefits__text {
+  @media screen and (min-width: $mobile) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
+  margin-bottom: 10px;
+  color: var(--main-color-text);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.benefits__pref {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+}

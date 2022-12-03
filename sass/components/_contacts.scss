@@ -1,0 +1,60 @@
+.contacts {
+  display: none;
+  @media screen and(min-width:$tablet) {
+    display: block;
+    gap: 40px;
+    margin-left: auto;
+    align-items: center;
+    color: var(--color-text);
+    text-decoration: none;
+    list-style: none;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @media screen and(min-width:$desktop) {
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+    text-decoration: none;
+    list-style: none;
+  }
+}
+.contacts__link {
+  @media screen and(min-width:$tablet) {
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 12px;
+  }
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  list-style: none;
+  align-items: center;
+  transition: color var(--animation);
+
+  &:hover .contacts__icon,
+  &:focus .contacts__icon {
+    fill: var(--cursor);
+    transition: color var(--animation);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--cursor);
+    background-color: inherit;
+  }
+}
+
+.contacts__icon {
+  fill: var(--color-text);
+  margin-right: 10px;
+  align-items: center;
+}

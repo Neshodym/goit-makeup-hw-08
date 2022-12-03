@@ -1,0 +1,33 @@
+.body,
+h1,
+h2,
+h3,
+h4,
+li,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.benefits,
+.makeing__item,
+.team__list,
+.project__list,
+.filter,
+.сustomers__item,
+.socials__item,
+.contacts__list,
+.contacts__link,
+.contacts,
+.mobile-menu,
+.mobile-contacts,
+.mobile-socials {
+  list-style: none;
+}
+// responcive
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

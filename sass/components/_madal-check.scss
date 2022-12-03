@@ -1,0 +1,68 @@
+.check {
+    display: inline-block;
+    margin-bottom: 30px;
+  
+}
+
+.check__lable {
+    @media screen and(min-width:$desktop) {
+            font-size: 14px;
+        }
+           font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 12px;
+    color: var(--color-text);
+    transition: transform var(--animation);
+}
+
+.check__lable::placeholder {
+    border-color: var(--cursor);
+    fill: var(--cursor);
+}
+
+.check__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+
+    &:checked+.check__jpg .uncheck {
+    opacity: 0;
+}
+&:checked+.check__jpg .check {
+    opacity: 1;
+}
+}
+
+.check__jpg {
+    margin-right: 7px;
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+}
+
+.check__jpg .uncheck {
+    opacity: 1;
+}
+
+
+
+.check__jpg .check {
+    opacity: 0;
+    transition: color var(--animation);
+}
+
+
+
+.check__link {
+    @media screen and(min-width:$desktop) {
+        font-size: 14px;
+    }
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--cursor);
+}

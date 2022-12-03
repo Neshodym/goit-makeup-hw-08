@@ -1,0 +1,36 @@
+.foot {
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-hero-footer);
+
+  // @media screen and(min-width:$tablet) {
+  //   padding-top: 0;
+  // }
+}
+.container--level {
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+
+  @media screen and(min-width:$tablet) {
+    display: flex;
+  }
+  @media screen and(min-width:$desktop) {
+    align-items: baseline;
+    justify-content: flex-start;
+  }
+}
+
+.foot__contacts {
+  margin-bottom: 60px;
+  text-align: center;
+  @media screen and(min-width:$desktop) {
+    text-align: start;
+    margin-bottom: 0;
+  }
+}

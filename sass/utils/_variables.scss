@@ -1,0 +1,33 @@
+:root {
+  --main-color-text: #212121;
+  --color-text: #757575;
+  --cursor: #2196f3;
+  --main-background-color: #fff;
+  --background-hero-footer: #2f303a;
+  --background-card: #f5f5f5;
+  --baskground-team: #f5f4fa;
+  --logo-part-color: #000000;
+  --text-decoration: rgba(255, 255, 255, 0.6);
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// brekpoint
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
+// <div class="footer__subscription">
+//  <h3 class="footer__title">Підпишіться на розсилку</h3>
+//  <form class="footer__form">
+//    <label>
+//     <input
+//         class="footer__field"  type="email"  name="subscribe-email"  placeholder="E-mail" required/>
+//   </label>
+//   <button class="footer__button" type="submit">
+//     Підписатися
+//     <svg class="footer__icon">
+//       <use href="./img/icons.svg#icon-paper-plane" width="24" height="24"></use>
+//     </svg>
+//   </button>
+//   </form>
+// </div>
