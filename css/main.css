@@ -136,6 +136,14 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .main__nav {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .nav__logo {
@@ -317,10 +325,9 @@ img {
 .section--decoration {
   background-color: var(--background-hero-footer);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img-\ hero.jpg);
@@ -329,16 +336,28 @@ img {
   background-size: cover;
   background-position: center;
 }
+@media screen and (min-width: 1200px) {
+  .section--decoration {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+  }
+}
 
 .hero__text {
   margin-bottom: 30px;
   text-align: center;
   color: var(--main-background-color);
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero__text {
+    font-size: 44px;
+  }
 }
 
 .hero__btn {
@@ -397,9 +416,6 @@ img {
   }
 }
 
-.benefits__item {
-  width: 450px;
-}
 @media screen and (min-width: 768px) {
   .benefits__item {
     width: 354px;
@@ -409,9 +425,9 @@ img {
   .benefits__item {
     width: 270px;
   }
-}
-.benefits__item:not(:last-child) {
-  margin-bottom: 30px;
+  .benefits__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .benefits__icons {
@@ -439,7 +455,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .benefits__text {
     text-align: center;
   }
@@ -495,9 +511,14 @@ img {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .makeing {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .makeing {
+    padding-bottom: 94px;
   }
 }
 
@@ -536,12 +557,18 @@ img {
 }
 
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--main-color-text);
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .team {
@@ -690,7 +717,7 @@ img {
 }
 
 .clients {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   font-size: 28px;
   line-height: 1.16;
   text-align: center;
@@ -699,6 +726,7 @@ img {
 @media screen and (min-width: 1200px) {
   .clients {
     font-size: 36px;
+    padding-bottom: 50px;
   }
 }
 
@@ -1545,7 +1573,6 @@ img {
 }
 
 .menu-toggle {
-  min-height: 40px;
   min-width: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1582,7 +1609,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 480px;
+  width: 100vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1621,9 +1648,6 @@ img {
   margin-bottom: auto;
   list-style: none;
 }
-.mobile-menu--curent-menu {
-  color: var(--cursor);
-}
 
 .mobile-menu .link {
   display: block;
@@ -1634,6 +1658,9 @@ img {
   margin-bottom: 32px;
   color: var(--main-color-text);
   text-decoration: none;
+}
+.mobile-menu .link--curent {
+  color: var(--cursor);
 }
 
 .menu-toggle:hover .menu-hover,

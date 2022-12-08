@@ -21,16 +21,19 @@
 }
 
 .benefits__item {
-  width: 450px;
+  // width: 450px;
+
   @media screen and(min-width:$tablet) {
     width: 354px;
+
     // flex-wrap: wrap;
   }
   @media screen and(min-width:$desktop) {
     width: 270px;
-  }
-  &:not(:last-child) {
-    margin-bottom: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -45,7 +48,7 @@
 }
 
 .benefits__text {
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: 480px) {
     text-align: center;
   }
 

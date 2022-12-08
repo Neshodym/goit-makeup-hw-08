@@ -23,7 +23,7 @@
 }
 
 .menu-toggle {
-  min-height: 40px;
+  // min-height: 40px;
   min-width: 40px;
   display: flex;
   align-items: center;
@@ -57,7 +57,7 @@
   top: 0;
   left: 0;
   display: flex;
-  width: 480px;
+  width: 100vw;
   flex-direction: column;
   height: 796px;
   padding: 48px 40px;
@@ -83,9 +83,6 @@
   padding: 0;
   margin-bottom: auto;
   list-style: none;
-  &--curent-menu {
-    color: var(--cursor);
-  }
 }
 
 .mobile-menu .link {
@@ -97,6 +94,10 @@
   margin-bottom: 32px;
   color: var(--main-color-text);
   text-decoration: none;
+
+  &--curent {
+    color: var(--cursor);
+  }
 }
 
 .menu-toggle:hover .menu-hover,
@@ -126,6 +127,9 @@
 
 .mobile-socials {
   display: flex;
+  // @media screen and(max-width:320px) {
+  //   display: inline-block;
+  // }
 }
 .mobile-contacts li:not(:last-child) {
   margin-bottom: 32px;
