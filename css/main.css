@@ -416,17 +416,22 @@ img {
   }
 }
 
+.benefits__item {
+  margin-bottom: 30px;
+}
+.benefits__item:last-child {
+  margin-bottom: 0;
+}
 @media screen and (min-width: 768px) {
   .benefits__item {
     width: 354px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .benefits__item {
     width: 270px;
-  }
-  .benefits__item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -477,9 +482,14 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--color-text);
+  margin-bottom: 30px;
+}
+.benefits__pref:last-child {
+  margin-bottom: 0;
 }
 
 .section__we-do--hiden .we-do {
+  padding-top: 94px;
   margin-bottom: 50px;
   color: var(--main-color-text);
   font-size: 36px;
@@ -498,14 +508,6 @@ img {
   }
 }
 
-.makeing {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 @media screen and (max-width: 480px) {
   .makeing {
     display: none;
@@ -519,6 +521,12 @@ img {
 @media screen and (min-width: 1200px) {
   .makeing {
     padding-bottom: 94px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
