@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <header class="header">
+  <header class="header">
       <div class="container main__nav">
         <nav class="nav">
           <a href="./index.html" class="nav__logo">
@@ -29,12 +29,11 @@
           >
           <ul class="nav__list">
             <li>
-              <a href="./index.html" class="nav__link">Студія</a>
+              <a href="./index.html" class="nav__link "
+                >Студія</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="nav__link nav__link--curent"
-                >Портфоліо</a
-              >
+              <a href="./portfolio.html" class="nav__link nav__link--curent ">Портфоліо</a>
             </li>
             <li>
               <a href="/" class="nav__link">Контакти</a>
@@ -47,18 +46,32 @@
               <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
-              info@devstudio.com</a
-            >
+              info@devstudio.com</a>
           </li>
           <li>
             <a href="callto:+380961111111" class="contacts__link">
               <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
-              +38 096 111 11 11</a
-            >
+              +38 096 111 11 11</a>
           </li>
         </ul>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg
+          class="menu-hover"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+          <use href="./images/icons.svg#menu"></use>
+           </svg>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -87,10 +100,17 @@
                 <a href="" class="project__link">
                   <div class="project__picture">
                     <img
-                      src="./images/project1.jpg"
+                    srcset="./images/w/portfolio/img_354.jpg 354w,
+                    ./images/w/portfolio/img_370.jpg 370w,
+                    ./images/w/portfolio/img_450.jpg 450w,
+                    ./images/w/portfolio/img_708.jpg 708w,
+                    ./images/w/portfolio/img_740.jpg 740w,
+                    ./images/w/portfolio/img_900.jpg 900w"
+                    sizes="(min-width: 1200px) 370px, 
+                    (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                     src="./images/w/portfolio/img_450.jpg"
                       alt="project-1"
-                      width="370"
-                      height="294"
+                     
                     />
                     <div class="overlay">
                       <p class="overlay__text">
@@ -112,11 +132,17 @@
                 <a href="" class="project__link">
                   <div class="project__picture">
                     <img
-                      src="./images/project2.jpg"
+                        srcset="./images/w/portfolio/img_354-1.jpg 354w,
+                    ./images/w/portfolio/img_370-1.jpg 370w,
+                    ./images/w/portfolio/img_450-1.jpg 450w,
+                    ./images/w/portfolio/img_708-1.jpg 708w,
+                    ./images/w/portfolio/img_740-1.jpg 740w,
+                    ./images/w/portfolio/img_900-1.jpg 900w"
+                    sizes="(min-width: 1200px) 370px, 
+                    (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                     src="./images/w/portfolio/img_450-1.jpg"
                       alt="project-2"
-                      width="370"
-                      height="294"
-                    />
+                                         />
                     <div class="overlay">
                       <p class="overlay__text">
                         Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -128,7 +154,7 @@
                   </div>
                   <div class="project__desk">
                     <h3 class="project__name">
-                      Постер New Orlean vs Golden Star
+                      Постер New Orlean vs Golden  Star
                     </h3>
                     <p class="project__text">Дизайн</p>
                   </div></a
@@ -139,10 +165,16 @@
                 <a href="" class="project__link">
                   <div class="project__picture">
                     <img
-                      src="./images/project3.jpg"
+                         srcset="./images/w/portfolio/img_354-2.jpg 354w,
+                    ./images/w/portfolio/img_370-2.jpg 370w,
+                    ./images/w/portfolio/img_450-2.jpg 450w,
+                    ./images/w/portfolio/img_708-2.jpg 708w,
+                    ./images/w/portfolio/img_740-2.jpg 740w,
+                    ./images/w/portfolio/img_900-2.jpg 900w"
+                    sizes="(min-width: 1200px) 370px, 
+                    (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                     src="./images/w/portfolio/img_450-2.jpg"
                       alt="project-3"
-                      width="370"
-                      height="294"
                     />
                     <div class="overlay">
                       <p class="overlay__text">
@@ -164,10 +196,16 @@
                 <a href="" class="project__link">
                   <div class="project__picture">
                     <img
-                      src="./images/project4.jpg"
+                        srcset="./images/w/portfolio/img_354-3.jpg 354w,
+                    ./images/w/portfolio/img_370-3.jpg 370w,
+                    ./images/w/portfolio/img_450-3.jpg 450w,
+                    ./images/w/portfolio/img_708-3.jpg 708w,
+                    ./images/w/portfolio/img_740-3.jpg 740w,
+                    ./images/w/portfolio/img_900-3.jpg 900w"
+                    sizes="(min-width: 1200px) 370px, 
+                    (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                     src="./images/w/portfolio/img_450-3.jpg"
                       alt="project-4"
-                      width="370"
-                      height="294"
                     />
                     <div class="overlay">
                       <p class="overlay__text">
@@ -189,10 +227,16 @@
                 <a href="" class="project__link">
                   <div class="project__picture">
                     <img
-                      src="./images/project5.jpg"
+                       srcset="./images/w/portfolio/img_354-4.jpg 354w,
+                    ./images/w/portfolio/img_370-4.jpg 370w,
+                    ./images/w/portfolio/img_450-4.jpg 450w,
+                    ./images/w/portfolio/img_708-4.jpg 708w,
+                    ./images/w/portfolio/img_740-4.jpg 740w,
+                    ./images/w/portfolio/img_900-4.jpg 900w"
+                    sizes="(min-width: 1200px) 370px, 
+                    (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                     src="./images/w/portfolio/img_450-4.jpg"
                       alt="project-5"
-                      width="370"
-                      height="294"
                     />
                     <div class="overlay">
                       <p class="overlay__text">
@@ -214,10 +258,16 @@
                 <a href="" class="project__link">
                   <div class="project__picture">
                     <img
-                      src="./images/project6.jpg"
+                         srcset="./images/w/portfolio/img_354-5.jpg 354w,
+                    ./images/w/portfolio/img_370-5.jpg 370w,
+                    ./images/w/portfolio/img_450-5.jpg 450w,
+                    ./images/w/portfolio/img_708-5.jpg 708w,
+                    ./images/w/portfolio/img_740-5.jpg 740w,
+                    ./images/w/portfolio/img_900-5.jpg 900w"
+                    sizes="(min-width: 1200px) 370px, 
+                    (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                     src="./images/w/portfolio/img_450-5.jpg"
                       alt="project-6"
-                      width="370"
-                      height="294"
                     />
                     <div class="overlay">
                       <p class="overlay__text">
@@ -239,10 +289,16 @@
                 <a href="" class="project__link">
                   <div class="project__picture">
                     <img
-                      src="./images/project7.jpg"
+                     srcset="./images/w/portfolio/img_354-2.jpg 354w,
+                    ./images/w/portfolio/img_370-6.jpg 370w,
+                    ./images/w/portfolio/img_450-6.jpg 450w,
+                    ./images/w/portfolio/img_708-6.jpg 708w,
+                    ./images/w/portfolio/img_740-6.jpg 740w,
+                    ./images/w/portfolio/img_900-6.jpg 900w"
+                    sizes="(min-width: 1200px) 370px, 
+                    (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                     src="./images/w/portfolio/img_450-6.jpg"
                       alt="project-7"
-                      width="370"
-                      height="294"
                     />
                     <div class="overlay">
                       <p class="overlay__text">
@@ -264,10 +320,16 @@
                 <a href="" class="project__link">
                   <div class="project__picture">
                     <img
-                      src="./images/project8.jpg"
+                      srcset="./images/w/portfolio/img_354-2.jpg 354w,
+                    ./images/w/portfolio/img_370-7.jpg 370w,
+                    ./images/w/portfolio/img_450-7.jpg 450w,
+                    ./images/w/portfolio/img_708-7.jpg 708w,
+                    ./images/w/portfolio/img_740-7.jpg 740w,
+                    ./images/w/portfolio/img_900-7.jpg 900w"
+                    sizes="(min-width: 1200px) 370px, 
+                    (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                     src="./images/w/portfolio/img_450-7.jpg"
                       alt="project-8"
-                      width="370"
-                      height="294"
                     />
                     <div class="overlay">
                       <p class="overlay__text">
@@ -289,10 +351,16 @@
                 <a href="" class="project__link">
                   <div class="project__picture">
                     <img
-                      src="./images/project9.jpg"
+                      srcset="./images/w/portfolio/img_354-8.jpg 354w,
+                    ./images/w/portfolio/img_370-8.jpg 370w,
+                    ./images/w/portfolio/img_450-8.jpg 450w,
+                    ./images/w/portfolio/img_708-8.jpg 708w,
+                    ./images/w/portfolio/img_740-8.jpg 740w,
+                    ./images/w/portfolio/img_900-8.jpg 900w"
+                    sizes="(min-width: 1200px) 370px, 
+                    (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                     src="./images/w/portfolio/img_450-8.jpg"
                       alt="project-9"
-                      width="370"
-                      height="294"
                     />
                     <div class="overlay">
                       <p class="overlay__text">
@@ -316,7 +384,7 @@
     </main>
    <footer class="foot">
       <div class="container container--level">
-        <div>
+        <div class="foot__contacts">
           <a href="./index.html" class="logo__foot">
             <span class="nav__logo--part">Web</span>Studio
           </a>
@@ -404,11 +472,12 @@
             </li>
           </ul>
         </div>
-        <form class="subscribe">
+<form class="subscribe">
           <div class="subscribe__block">
-            <label class="subscribe__text" for="email">
-              Підпишіться на розсилку
-            </label>
+            <h3 class="subscribe__text"> Підпишіться на розсилку</h3>
+            <label
+            class="subscribe__label" for="email"
+            >
             <input
               class="subscribe__field"
               type="email"
@@ -416,17 +485,57 @@
               id="email"
               placeholder="E-mail"
             />
+          </label>
           </div>
-          <div class="form__send">
-            <button type="button" class="form__btn">Підписатися</button>
+          <button type="button" class="form__btn">Підписатися
             <svg class="form__img" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
-          </div>
+          </button>
         </form>
       </div>
     </footer>
-      </div>
-    </footer>
+     <!-- menu-mobile -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+        class="menu-hover"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24">
+
+  <use href="./images/icons.svg#close-menu"></use>
+</svg>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="link  ">Студія</a></li>
+        <li><a href="./portfolio.html" class="link link--curent">Портфоліо</a></li>
+        <li><a href="" class="link">Контакти</a></li>
+        
+      </ul>
+      <ul class="mobile-contacts">
+        <li><a href="" class="link__tel">+38 096 111 11 11</a></li>
+        <li><a href="" class="link__email">info@devstudio.com</a></li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials-item"><a href="https://www.instagram.com/" class="link">Instagram</a></li>
+        <li class="mobile-socials-item"><a href="https://www.twitter.com/" class="link">Twitter</a></li>
+        <li class="mobile-socials-item"><a href="https://www.facebook.com/" class="link">Facebook</a></li>
+        <li class="mobile-socials-item"><a href="https://www.linkedin.com/" class="link">LinkedIn</a></li>
+      </ul>
+    </div>
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    
   </body>
 </html>
